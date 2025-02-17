@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "galletascurrencymod",
+	"version": "${version}",
+	"name": "Galleta's Currency Mod",
+	"description": "Add currency to your server and modpacks!",
+	"authors": [
+		"Koshiii"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/galletascurrencymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.galletas.currencymod.GalletasCurrencyMod"
+		],"client": [
+			"net.galletas.currencymod.GalletasCurrencyModClient"
+		],
+		"fabric-datagen": [
+			"net.galletas.currencymod.GalletasCurrencyModDataGenerator"
+		]
+	},
+	"mixins": [
+		"galletascurrencymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
